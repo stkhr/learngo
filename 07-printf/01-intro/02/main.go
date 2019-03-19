@@ -16,5 +16,5 @@ func main() {
 	fmt.Printf("%q\n", brand)
 
 	brand = "Google"
-	fmt.Printf("%q\n", brand)
+	fmt.Printf("これは%q\n", brand)
 }
