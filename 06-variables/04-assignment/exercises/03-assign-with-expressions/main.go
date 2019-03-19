@@ -29,11 +29,11 @@ func main() {
 
 	// Declares a new float64 variable
 	// 0. means 0.0
-	n := 0.
+	n := 3.14
 
 	// ADD YOUR CODE BELOW
 
-	// ?
+	n = n * 2
 
 	fmt.Println(n)
 }

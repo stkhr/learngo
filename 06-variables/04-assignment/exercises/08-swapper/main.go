@@ -24,7 +24,7 @@ package main
 func main() {
 	// UNCOMMENT THE CODE BELOW:
 
-	// color, color2 := "red", "blue"
-
-	// ?
+	color, color2 := "orange", "green"
+	color, color2 = color2, color
+	println(color, color2)
 }

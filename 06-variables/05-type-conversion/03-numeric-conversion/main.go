@@ -38,7 +38,7 @@ func main() {
 
 	// this works: there are two byte values
 	// byte is also an int
-	fmt.Println(string([]byte{104, 105}))
+	fmt.Println(string([]byte{104, 105})) // h is equal to h. i is equalto 105
 
 	_ = apple
 }

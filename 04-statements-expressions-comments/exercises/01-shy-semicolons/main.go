@@ -7,6 +7,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Shy Semicolons
 //
@@ -18,4 +20,5 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	fmt.Println("Hello"); fmt.Println("World!")
 }

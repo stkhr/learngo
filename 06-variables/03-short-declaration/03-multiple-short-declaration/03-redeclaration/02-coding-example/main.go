@@ -23,6 +23,9 @@ func main() {
 	name, age := "Marie", 66
 	fmt.Println(name, age)
 
+	fmt.Println(name)
+	name, on := "hoge", true
+	fmt.Println(name, on)
 	// EXAMPLE #2
 
 	// name = "Albert"
