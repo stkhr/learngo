@@ -40,8 +40,8 @@ func main() {
 	// You should solve it only by using conversions.
 	// Do not change the code in any other way.
 
-	// celsius *= celsiusDegree * factor
-	// fahr *= fahrDegree * factor
+	celsius *= Celsius(celsiusDegree) * Celsius(factor)
+	fahr *= Fahrenheit(fahrDegree) * Fahrenheit(factor)
 
 	// ----------------------------------------
 	// DONT TOUCH THIS
