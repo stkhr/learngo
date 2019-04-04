@@ -42,10 +42,10 @@ func main() {
 	// }
 
 	fmt.Println()
-	fmt.Printf("1st byte   : %c\n", str[0])   // ok
-	fmt.Printf("2nd byte   : %c\n", str[1])   // not ok
-	fmt.Printf("2nd rune   : %s\n", str[1:3]) // ok
-	fmt.Printf("last rune  : %s\n", str[11:]) // ok
+	fmt.Printf("1st byte   : %c\n", str[0])           // ok
+	fmt.Printf("2nd byte   : %c\n", str[1])           // not ok
+	fmt.Printf("2nd rune   : %s\n", str[1:3])         // ok
+	fmt.Printf("last rune  : %s\n", str[len(str)-4:]) // ok
 
 	// disadvantage: each one is 4 bytes
 	runes := []rune(str)
@@ -58,4 +58,15 @@ func main() {
 	fmt.Printf("1st rune   : %c\n", runes[0])
 	fmt.Printf("2nd rune   : %c\n", runes[1])
 	fmt.Printf("first five : %c\n", runes[:5])
+
+	fmt.Println()
+
+	word := "öykü"
+	fmt.Printf("%q in runes: %c\n", word, []rune(word))
+	fmt.Printf("%q in bytes: % [1]x\n", word)
+
+	fmt.Printf("%s %s\n", word[:2], []byte{word[0], word[1]}) // ö
+	fmt.Printf("%c\n", word[2])                               // y
+	fmt.Printf("%c\n", word[3])                               // k
+	fmt.Printf("%s %s\n", word[4:], []byte{word[4], word[5]}) // ü
 }
