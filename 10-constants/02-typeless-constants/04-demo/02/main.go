@@ -23,7 +23,7 @@ func main() {
 
 	// NOT OK
 	// time.Duration and int are different types
-	// t = time.Second * i
+	//t = time.Second * i
 
 	// OK: i is int, Duration is int64
 	//     So, i is convertable to int64

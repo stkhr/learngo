@@ -22,14 +22,14 @@ import "fmt"
 // ---------------------------------------------------------
 
 func main() {
+	const (
+		Spring = (iota + 1) * 3
+		Summer
+		Fall
+		Winter
+	)
 	// NOTE : You should remove all the initializers below
 	//        first. Then use iota to fix it.
-	const (
-		Winter = 12
-		Spring = 3
-		Summer = 6
-		Fall   = 9
-	)
 
 	fmt.Println(Winter, Spring, Summer, Fall)
 }

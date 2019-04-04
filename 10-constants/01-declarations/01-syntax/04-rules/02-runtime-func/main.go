@@ -21,5 +21,5 @@ func main() {
 	// ERROR: math.Pow is not a constant
 	//        constants cannot use runtime constructs
 
-	// const max int = math.Pow10(2)
+	const max int = math.Pow10(2)
 }
