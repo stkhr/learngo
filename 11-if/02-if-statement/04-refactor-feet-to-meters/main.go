@@ -27,9 +27,9 @@ func main() {
 		fmt.Println(strings.TrimSpace(usage))
 
 		// ALTERNATIVE:
-		// fmt.Println("Please tell me a value in feet")
+		//fmt.Println("Please tell me a value in feet")
 
-		return
+		return //ここで処理を終わらす
 	}
 
 	arg := os.Args[1]
