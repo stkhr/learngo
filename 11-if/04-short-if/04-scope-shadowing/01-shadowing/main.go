@@ -15,7 +15,7 @@ import (
 
 func main() {
 	// UNCOMMENT THIS TO SEE IT IN ACTION:
-	// var n int
+	var n int
 
 	if a := os.Args; len(a) != 2 {
 		fmt.Println("Give me a number.")
@@ -33,5 +33,5 @@ func main() {
 	// not to the if statement above
 
 	// UNCOMMENT ALSO LINES BELOW TO SEE IT IN ACTION:
-	// fmt.Printf("n is %d. 👻 👻 👻 - you've been shadowed ;-)", n)
+	fmt.Printf("n is %d. 👻 👻 👻 - you've been shadowed ;-)", n)
 }

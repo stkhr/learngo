@@ -16,8 +16,8 @@ func main() {
 	// time.Now() gets the current time
 	// and in turn, .Hour() gets the current hour from it
 
-	// h := time.Now().Hour()
-	// fmt.Println("Current hour is", h)
+	h := time.Now().Hour()
+	fmt.Println("Current hour is", h)
 
 	switch h := time.Now().Hour(); {
 	case h >= 18: // 18 to 23
