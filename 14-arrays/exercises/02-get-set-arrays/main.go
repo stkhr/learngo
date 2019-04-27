@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"strings"
+)
+
 // ---------------------------------------------------------
 // EXERCISE: Get and Set Array Elements
 //
@@ -115,4 +120,20 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	var(
+		names		= [3]string{"hoge", "fuga", "piyo"}
+		distances	= [5]int{1,2,3,4,5}
+	)
+
+	separator := "\n" + strings.Repeat("=", 20) + "\n"
+
+	fmt.Print("names", separator)
+	for i := 0; i < len(names); i++ {
+		fmt.Printf("names[%d]: %q\n", i, names[i])
+	}
+
+	fmt.Print("\ndistances", separator)
+	for i := 0; i < len(distances); i++ {
+		fmt.Printf("distances[%d]: %d\n", i, distances[i])
+	}
 }

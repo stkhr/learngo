@@ -7,6 +7,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Declare empty arrays
 //
@@ -58,4 +60,17 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	var(
+		names		[3]string
+		distances	[5]int
+	)
+
+	fmt.Printf("names    : %#v\n", names)
+	fmt.Printf("distances: %#v\n", distances)
+
+	fmt.Printf("names    : %T\n", names)
+	fmt.Printf("distances: %T\n", distances)
+
+	fmt.Printf("names    : %q\n", names)
+	fmt.Printf("distances: %d\n", distances)
 }
